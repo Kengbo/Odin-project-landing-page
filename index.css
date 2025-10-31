@@ -1,0 +1,80 @@
+:root{
+    --font1: "roboto", sans-serif;
+    --darkbghero: #1F2937;
+    --heroheadersize: 48px;
+    --heroheadercolor: #F9FAF8;
+    --heroheaderFweight: 900;
+
+    --herosectxtsize: 18px;
+    --herosectxtcolor: #E5E7EB;
+
+    --herologotxtsize: 24px;
+    --herologotxtcolor: #F9FAF8;
+
+    --btncolor: #3882F6;
+
+    --infoheadertxtsize: 36px;
+    --infoheadercolor: #1F2937;
+    --infoheaderweight: 900;
+    
+    --quotesecbgcolor: #E5E7EB;
+
+    --qttxtsize:36px;
+    --qttxtcolor: #1F2937;
+    --qttxtweight: 300;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'roboto', sans-serif;
+    /* padding: 0 110px; */
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    padding: 0 100px;
+    background-color: var(--darkbghero);
+}
+.navright ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.navright ul li a{
+    text-decoration: none;
+    color: var(--heroheadercolor);
+}
+.mainSection{
+    display: flex;
+    height: 80vh;
+    width: 100vw;
+    background-color: var(--darkbghero);
+    padding: 0 100px;
+    justify-content: center;
+    align-items: center;
+}
+.Section1left h1{
+    font-size: var(--heroheadersize);
+    color: var(--heroheadercolor);
+    font-weight: var(--heroheaderFweight);
+    
+}
+.Section1right img{
+    width: clamp(250px, 60%, 500px);
+    object-fit:contain;
+}
+.Section1left{
+    flex: 40%;
+    
+
+}
+.Section1right{
+    flex: 60%;
+
+}
